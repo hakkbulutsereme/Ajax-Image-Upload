@@ -2,7 +2,7 @@
 ## Ajax ve PHP ile Fotoğraf Yükleme
 Herkese iyi çalışmalar, bu projemizde web sitemizde yada ufak bir projede Ajax ve PHP yardımıyla footoğraf ve resim yükleme yönteminden bahsedeceğim.
 Bu proje sayesinde JavaScrit jQuery ile dinamik ve hızlı bir fotoğraf yükleme işlemi yapacak, aynı zamanda seçili fotoğrafımızın anlık görüntüleme işlemini yapacağız.
-##Gelelim yapımına;
+## Gelelim yapımına;
 Projemiz 3 ana dosya üzerinde çalışmakta bunlar; index.php, upload.js ve upload.php 
 İndex.php sayfamızda seçili fotoğrafı görüntüleme ve form ile gönderme işlemi yapacağız.
 Upload.js ile seçilen fotografı jquery change fonksiyonu ile algılama yaparak ajax ile post etme işlemini barındıracağız
@@ -83,7 +83,7 @@ jQuery("#f_ekle").on("submit", function(e){
 });
 });
 ```
-##Upload.php;
+## Upload.php;
 Upload dosyamızda ajax ile post edilen fotoğrafımızın öncelikle varlığını daha sonra önceden belirlediğimiz formatlar (jpeg,png vs.) olması takdirde işlem dögüsüne devam ediyoruz. Format hatalı ise hata kodunu “format” olarak yazıdrıyoruz.
 Format kısmında hata yoksa gönderilen fotoğrafımızın uzantı öncesi adını seo geçersiz karakterlerden arındırarak kendi formatı ile takrar birleşitriyoruz.
 Daha sonra yüklenen fotoğrafların aynı dosya olması durumunda, karışıklık olmaması için date güncel tarih ve saat bilgisini fotoğraf adının başına ekleyerek, önceden belirttiğimiz dosya yoluna tarayıcımız tarafından temp klasöründe bekletilen aynı fotoğrafımızı ekliyoruz.
